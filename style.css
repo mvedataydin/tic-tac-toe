@@ -40,9 +40,11 @@ p{
 .square {
   width : 125px;
   height: 125px;
-  font-size: 110px;
+  font-size: 120px;
   cursor: pointer;
   text-align: center;
+  vertical-align: middle;
+  line-height: 130px; 
 }
 
 
