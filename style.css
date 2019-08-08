@@ -37,6 +37,7 @@ p{
   color: rgba(0,0,0,.75);
 }
 
+
 .square {
   width : 125px;
   height: 125px;
@@ -91,4 +92,14 @@ p{
 .bottom{
   padding-bottom: 20px;
   margin-bottom: 30px;
+}
+
+.blink-me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
