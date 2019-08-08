@@ -1,16 +1,18 @@
 "use strict"
 
 var ticTacToe = {
-  gameBoard: [['O','O','O'],
-              ['X','X','X'],
-              ['O','O','O']],
+  gameBoard: [['','',''],
+              ['','',''],
+              ['','','']],
   
   playerPlay: function(row, column) {
     this.gameBoard[row][column] = 'X';
+    render.displayPlayerMove();
     handlers.resetEventListener();
   },
   computerPlay: function(row, column){
     this.gameBoard[row][column] = 'O';
+    render.displayPlayerMove();
     handlers.resetEventListener();
   }, 
 }
@@ -19,11 +21,11 @@ var ticTacToe = {
 var handlers = {
 
   playerPlay: function() {
-    
     var square = document.getElementsByClassName('square');
     var cells = Array.prototype.slice.call(square);
     var buttonClicked;
     cells.forEach(function(cell){
+      console.log(cells.textContent)
       cell.addEventListener('click', function(e){
         buttonClicked = e.target.getAttribute('value');
         if(buttonClicked < 4) {               // check if first row
@@ -54,5 +56,33 @@ var handlers = {
 
 var render = {
 
+  displayPlayerMove: function() {
+    for(var i = 0; i < 3; i++) {
+      for(var j = 0; j < 3; j++){
+       var temp = ticTacToe.gameBoard[i][j];
+       console.log(temp+ "  " + i + "  " + j);
+       if(temp === "X"){
+         if(i < 1) {
+           var cell = document.querySelector(`div[value='${j+1}']`);
+           console.log(cell)
+           cell.textContent = "X";
+           cell.classList.add('player');
+          }
+         else if(i < 2) {
+           var cell = document.querySelector(`div[value='${j+4}']`);
+           console.log(cell)
+           cell.textContent = "X";
+           cell.classList.add('player');
+          }
+         else if(i < 3) {
+           var cell = document.querySelector(`div[value='${j+7}']`);
+           console.log(cell)
+           cell.textContent = "X";
+           cell.classList.add('player');
+          }
+        }
+      }
+    }
+  },
 
 }
