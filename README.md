@@ -1,5 +1,5 @@
 ### About
-A simple calculator. Coded to improve CSS, HTML, JavaScript skills.
+Tic Tac Toe game against AI, using minimax algorithm. Coded to improve CSS, HTML, JavaScript skills.
 
 Link to the project: https://mvedataydin.github.io/tic-tac-toe/
 
