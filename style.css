@@ -5,8 +5,8 @@
   font-weight: normal;
   text-align: center;
 }
+
 body{
-  
   background-color: #14bdac;
 }
 
@@ -21,14 +21,13 @@ button{
   color: rgba(0,0,0,.75);
   cursor: pointer;
   outline: none;
-
 }
 
 h1{
   margin-bottom:3px;
   padding-bottom: 3px;
   font-family: 'Nunito', sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   text-align: center;
   color: rgba(0,0,0,.60);
 }
@@ -36,7 +35,6 @@ h1{
 p{
   color: rgba(0,0,0,.75);
 }
-
 
 .square {
   width : 125px;
@@ -47,8 +45,6 @@ p{
   vertical-align: middle;
   line-height: 130px; 
 }
-
-
 
 .container{
   margin: auto;
@@ -67,9 +63,6 @@ p{
   justify-content: center;
 }
 
-
-
-
 .vert {
   border-left: 10px solid rgba(0,0,0,.54);;
   border-right: 10px solid rgba(0,0,0,.54);;
@@ -87,11 +80,6 @@ p{
 .computer{ 
   color: rgb(237, 247, 203);
   font-family: 'Nunito', sans-serif;
-}
-
-.bottom{
-  padding-bottom: 20px;
-  margin-bottom: 30px;
 }
 
 .blink-me {
