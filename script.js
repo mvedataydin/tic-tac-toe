@@ -9,6 +9,7 @@
                              ['','',''],
                              ['','','']]  
       render.refresh();
+      handlers.resetEventListener();
       title.classList.remove('endgame');
     }
     handlers.playerPlay();
